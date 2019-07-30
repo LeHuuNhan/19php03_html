@@ -1,0 +1,21 @@
+#demo1 {
+	width: 200px;
+	height: 100px;
+	border: 1px solid green;
+	margin-bottom: 20px;
+	/*đổ bóng cho khung truyền vào 4 tham số */
+	box-shadow: 3px 5px 10px blue;
+	/*đổ màu cho khung nền*/
+	background-image: linear-gradient(to bottom, red, yellow);
+}
+/*tạo hình tròn*/
+#demo2 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid green;
+	/*tao bo tron cho canh*/
+	border-radius: 50%;
+	background: url('1.PNG');
+	/*chỉnh ảnh theo kích thước của forn thì ta dùng contain hoặc cover*/
+	background-size: cover;
+}
