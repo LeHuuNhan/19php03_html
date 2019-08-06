@@ -1,0 +1,273 @@
+@font-face {
+	font-family: thuphap;
+	src: url('thuphapnghieng.otf');
+}
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#menu {
+	width: 90%;
+	height: 100px;
+	margin: auto;
+	line-height: 20px;
+}
+.menu-left {
+	width: 30%;
+	float: left;
+	margin-top: 40px;
+
+}
+.menu-left ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0px;
+}
+.menu-left ul li {
+	display: inline;
+	padding: 5px;
+}
+.menu-left ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+.menu-left ul li a:hover {
+	color: red;
+}
+.menu-left ul li a:hover, a:focus {
+	font-size: 20px;
+}
+.menu-mid {
+	width: 40%;
+	margin-right: 40px;
+	float: left;	
+}
+.menu-mid h1 {
+	font-family: thuphap;
+	color: green;
+	text-shadow: 2px 4px 6px red;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.menu-mid h1 span {
+	color: blue;
+}
+.menu-mid p {
+	margin-top: 0px;
+	text-align: center;
+}
+.menu-right {
+	width: 15%;
+	margin-top: 40px;
+	float: right;
+}
+.menu-right button img {
+	width: 15px;
+	height: 15px;
+}
+.menu-right input {
+	width: 45px;
+}
+header {
+	width: 90%;
+	margin: auto;	
+}
+.header-top {
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.header-top img {
+	width: 100%;
+}
+
+.header-main {
+	width: 25%;
+	height: 100px;
+	border-bottom: 2px solid #D1DED0;
+	padding-bottom: 20px;
+	float: left;
+}
+
+.header-main1 {
+	width: 50px;
+	margin-top: 30px;
+	margin-right: 10px;
+	float: left;
+}
+.header-main2 {
+	width: 200px;
+	float: left;
+}
+.header-main2 h3 {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+.header-main2 p {
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+.section-top {
+	margin-top: 200px;
+	text-align: center;
+}
+.section-top div h1 {
+	font-family: Courier New;
+}
+.section-top div h1 span {
+	font-family: Arial Black;
+}
+.section-menu ul {
+	list-style-type: none;
+}
+.section-menu ul li {
+	display: inline;
+}
+
+section {
+	width: 90%;
+	margin: auto;
+}
+
+.section-mid {
+	text-align: center;
+	height: 1000px;
+}
+.section-mid-chill {
+	width: 17%;
+	height: 300px;
+	float: left;
+	margin: 15px;
+	text-align: center;
+	border: 1px solid grey;
+}
+.section-mid-chill ul li {
+	margin: 20px;
+	display: inline;
+}
+
+div.stars {
+	width: 100px;
+	margin: auto;
+  	display: inline-block;
+}
+ 
+input.star { display: none; }
+ 
+label.star {
+  float: right;
+  padding: 5px;
+  font-size: 10px;
+  color: #444;
+  transition: all .2s;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+ 
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-1:checked ~ label.star:before { 
+	color: #F62;
+}
+ 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+ 
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+.section-mid-chill p {
+	color: #19AB0E;
+}
+
+.section-botton {
+	height: 50px;
+	margin: 40px;
+}
+.section-botton ul {
+	position: fixed;
+   	z-index: 10;
+   	width: 100px;
+   	bottom: 25%;
+   	left: 50%;
+   	margin-left: -90px;
+   	display: flex;
+   	justify-content: space-between;
+}
+.section-botton ul li {
+	width: 20px;
+    height: 20px;
+    background: grey;
+    opacity: 0.6;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+    background-color: #58FAF4;
+}
+.section-botton p {
+	text-align: center;
+	margin: 40px;
+}
+
+footer .footer-top {
+	width: 90%;
+	height: 600px;
+	background-color: #EFFBF5;
+	margin: auto;
+}
+
+footer .footer-mid {
+	width: 90%;
+	height: 200px;
+	background-color: #088A4B;
+	margin: auto;
+}
+footer .footer-bottom {
+	width: 90%;
+	height: 50px;
+	background-color: white;
+	margin: auto;
+}
+footer .footer-bottom p {
+	width: 50%;
+	float: left;
+}
+footer .footer-bottom img {
+	width: 30px;
+	margin: 10px 5px 10px 5px;
+	float: right;
+}
+
+.footer-top-top {
+	width: 300px;
+	margin: auto;
+	padding-top: 40px;
+	text-align: center;
+
+}
+.footer-mid {
+
+}
+
+.footer-top-mid {
+	width: 200px;
+	height: 30px;
+	margin: auto;
+}
+.footer-top-bottom2 {
+	text-align: center;
+	margin-top: 40px;
+}
+
