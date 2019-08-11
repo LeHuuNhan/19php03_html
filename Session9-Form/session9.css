@@ -1,0 +1,125 @@
+.container {
+	background-color: blue;
+	height: 700px;
+	text-align: center;
+	padding: 40px;
+}
+
+.left {
+	width: 400px;
+	height: 525px;
+	border: 1px solid black;
+	float: left;
+	margin-left: 280px;
+	margin-right: 50px;
+	background-image: url('img/troidem.jpg');
+}
+input {
+	width:300px;
+	height:50px;
+	padding:0 15px;
+	color:#fff;
+	font-size:17px;
+	font-weight:200;
+	background-color:transparent;
+	border-bottom:3px solid #fff;
+	border-top-color:transparent;
+	border-left-color:transparent;
+	border-right-color:transparent;
+	font-family: 'Raleway', sans-serif;
+	margin:0 auto 20px;
+	display:block;
+	outline:none;
+	text-align: center;
+}
+input:focus {
+	color:#fff;
+	border-bottom:5px solid #3970b0;
+}
+
+button {
+	width: 300px;
+	height: 50px;
+	border: none;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	background-color: blue;
+	color: white;
+	margin-top: 40px;
+}
+.logo1 button {
+	width: 150px;
+	height: 30px;
+	float: left;
+	border: none;
+	-moz-border-radius-topright:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+	background-color: blue;
+	color: white;
+	margin-top: 40px;
+	margin-left: 50px;
+	padding: 0px;
+}
+
+.logo1 button img {
+	float: left;
+	margin: 0px;
+	-moz-border-radius-toprleft:20px;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	-webkit-border-bottom-left-radius:20px;
+}
+.logo1 button p {
+	text-align: center;
+	margin: 8px;
+	float: left;
+}
+.logo2 button {
+	width: 150px;
+	height: 30px;
+	float: left;
+	border: none;
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-bottom-left-radius:10px;
+	background-color: red;
+	color: white;
+	margin-top: 40px;
+	padding: 0px;
+}
+
+.logo2 button img {
+	float: right;
+	margin: 0px;
+	-moz-border-radius-toprright:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	-webkit-border-bottom-right-radius:20px;
+}
+.logo2 button p {
+	text-align: center;
+	margin: 8px 8px 8px 40px;
+	float: left;
+}
+form p {
+	margin-top: 150px;
+	text-align: center;
+	color: white; 
+}
+.right {
+	width: 400px;
+	height: 525px;
+	border: 1px solid black;
+	float: left;
+	background-image: url('img/troidem.jpg');
+}
+
+.bottom {
+	color: white;
+	float: left;
+	margin-left: 500px;
+	margin-top: 50px;
+}
