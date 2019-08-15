@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>introduce javascrip -session 11</title>
+	<link rel="stylesheet" href="session11.css">
+	<script type="text/javascript" src="js/intro-javascrip.js"></script>
+</head>
+<body>
+	<!-- -	Thay đổi nội dungHTML. -->
+	<p id="demo1">Hello</p>
+	<a href="#" onclick="document.getElementById('demo1').innerHTML = '<h1>HI</h1?'">Change HTML</a>
+
+	<!-- -	Thay đổi thuốc tính HTML. -->
+	<img src="img/1.png" alt="Image" id="demo2" width="200px;">
+	<a href="#" onclick="document.getElementById('demo2').src = 'img/iconfb.png'">Change img</a>
+
+	<!-- -	Thay đổi style của HTML -->
+	<p id="demo4">My javascrip !</p>
+	<a href="#" onclick="document.getElementById('demo4').style.color = 'blue'">Change color text</a>
+
+	<!-- -	Ẩn đối tượng HTML -->
+	<p id="demo5">	Ẩn đối tượng HTML</p>
+	<a href="#" onclick="document.getElementById('demo5').style.display = 'none'">Hide element</a>
+
+	<!-- -	Hiển thị nội dung HTML -->
+	<a href="#" onclick="document.getElementById('demo5').style.display = 'block'">Show element</a>
+
+</body>
+</html>
