@@ -62,37 +62,90 @@ function sum() {
  // }
 
  // VD : 
- var a = '1';
- switch(a) {
- 	case '1':
- 	document.write("hôm nay là thứ 2 <br>");
- 	break;
+ // cho 1 số có giá trị củ tháng trong năm 1-12
+ // nếu số đó khác 1-12 thì in ra số này không phải tháng của năm
+ // nếu số đó là tháng của năm thì in ra số ngày của tháng đó.
+ // cho thêm 1 số cho trước là số năm
+ // kiểm tra nam đó nhuần hay không để in ra số ngày của tháng 2
+ var myMonth = 2;
+ var myYear = 2020;
+ // tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày
+ // tháng 4, 6, 9, 11 có 30 ngày 
+ // tháng 2 có 28 ngày , nếu năm nhuần thì tháng 2 có 29 ngày
+ // năm nhuần là năm chia hết cho 4 nhưng không chia hết cho 100
 
- 	case '2':
- 	document.write('hôm nay là thứ 3 <br>');
- 	break;
+ switch(myMonth) {
+ 	case 1:
+	 	document.write("tháng 1 có 31 ngày <br>");
+	 	break;
 
- 	case '3':
- 	document.write('hôm nay là thứ 4 <br>');
- 	break;
+ 	case 2:
+ 		if (myYear % 4 == 0 && myYear % 100 != 0) {
+ 			document.write('đây là năm nhuần <br>');
+ 			document.write('tháng 2 có 29 ngày <br>');
+ 		}else {
+ 			document.write('tháng 2 có 28 ngày  <br>');
+ 		}
+	 	break;
 
- 	case '4':
- 	document.write('hôm nay là thứ 5 <br>');
- 	break;
+ 	case 3:
+	 	document.write('tháng 3 có 31 ngày <br>');
+	 	break;
 
- 	case '5':
- 	document.write('hôm nay là thứ 6 <br>');
- 	break;
+ 	case 4:
+	 	document.write('tháng 4 có 30 ngày <br>');
+	 	break;
 
- 	case '6':
- 	document.write('hôm nay là thứ 7 <br>');
- 	break;
+ 	case 5:
+	 	document.write('tháng 5 có 31 ngày <br>');
+	 	break;
 
- 	case '7':
- 	document.write('hôm nay là chủ nhật <br>');
- 	break;
+ 	case 6:
+	 	document.write('tháng 6 có 30 ngày <br>');
+	 	break;
+
+ 	case 7:
+	 	document.write('tháng 7 có 31 ngày <br>');
+	 	break;
+
+	 case 8:
+	 	document.write("tháng 8 có 31 ngày <br>");
+	 	break;
+
+ 	case 9:
+	 	document.write('tháng 9 có 30 ngày <br>');
+	 	break;
+
+ 	case 10:
+	 	document.write('tháng 10 có 31 ngày <br>');
+	 	break;
+
+ 	case 11:
+	 	document.write('tháng 11 có 30 ngày <br>');
+	 	break;
+
+ 	case 12:
+	 	document.write('tháng 12 có 31 ngày <br>');
+	 	break;
 
  	default:
- 	document.write('vui lòng nhập lại theo thứ tự');
- 	break
- }
+	 	document.write('vui lòng nhập số tháng của năm');
+	 	break
+}
+
+
+// 4. vòng lặp
+for (var i = 10; i >=0; i--) {
+	document.write(i);
+	document.write('<br>');
+}
+document.write('----------<br>');
+
+
+var n = 5;
+while (n < 10) {
+	document.write(n);
+	document.write('<br');
+	n++ ;
+}  
+
