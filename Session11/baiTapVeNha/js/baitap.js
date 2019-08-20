@@ -9,7 +9,7 @@ for(var i = 1; i <=100; i++) {
 		document.write("\n không chia hết cho 3, 5 ,15 <br>");
 	}else if (i % 3==0 && i % 5 ==0 && i % 15 ==0) {
 		document.write(i);
-		document.write("\n chia hết cho 3, 5, 15 <br>");
+		document.write("\n chia hết cho 15 <br>");
 	}else {
 		if (i % 3 ==0 && i % 5 !=0 && i % 15 !=0) {
 			document.write(i);
