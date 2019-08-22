@@ -5,23 +5,18 @@
 
 for(var i = 1; i <=100; i++) {
 	if (i % 3 !=0 && i % 5 !=0 && i % 15 !=0) {
-		document.write(i);
-		document.write("\n không chia hết cho 3, 5 ,15 <br>");
+		document.write(i +"\n không chia hết cho 3, 5 ,15 <br>");
 	}else if (i % 3==0 && i % 5 ==0 && i % 15 ==0) {
-		document.write(i);
-		document.write("\n chia hết cho 15 <br>");
+		document.write(i + "\n chia hết cho 15 <br>");
 	}else {
 		if (i % 3 ==0 && i % 5 !=0 && i % 15 !=0) {
-			document.write(i);
-			document.write("\n chia hết cho 3,<br>");
+			document.write(i + "\n chia hết cho 3,<br>");
 		}
 		if (i % 3 ==0 && i % 5 ==0 && i % 15 !=0) {
-			document.write(i);
-			document.write("\n chia hết cho 3, 5<br>");
+			document.write(i + "\n chia hết cho 3, 5<br>");
 		}
 		if (i % 3 !=0 && i % 5 ==0 && i % 15 !=0) {
-			document.write(i);
-			document.write("\n chia hết cho 5<br>");
+			document.write(i + "\n chia hết cho 5<br>");
 		}
 	}
 }
@@ -169,3 +164,53 @@ function tinhTien(){
 	document.write(tongTien);
 }
 tinhTien();
+document.write("<br>----------------------------<br>");
+
+
+// BT1: Ở trung tâm giải trí Euroland có chiếc máy tự động có thể thực hiện
+// được hai loại giao dịch sau:
+// 1) Bỏ vào 2 euro sẽ nhận được 3 USD và được tặng thêm 1 viên kẹo.
+// 2) Bỏ vào 5 USD sẽ nhận được 3 euro và được tặng thêm 1 viên kẹo.
+// Khi Buratino đến nghịch máy đổi tiền, cậu ta chỉ có toàn USD.
+// Khi cậu ta rời khỏi đó thì tiền đô bị hao hụt đi, không có thêm tiền euro
+// nhưng có được 50 viên kẹo.
+// Hỏi Buratino đã tốn bao nhiêu USD để có được món quà 50 viên kẹo đó?
+function tinhTienHaoHut(){
+	var soDoLa = 0;
+	var soEuro = 0;
+	var soKeo = 0;
+
+	while (soKeo < 50) {
+		soDoLa -= 5;
+		soEuro += 3;
+		soKeo++;
+		while (soEuro > 0){
+			soEuro -= 2 ;
+			soDoLa += 3;
+			soKeo++;
+		}
+	}
+	document.write("số tiền đô Bratino tốn là :" + soDoLa + "\n Đô la ");
+}
+tinhTienHaoHut();
+document.write("<br>----------------------------<br>");
+
+
+// BT2: In hình tam giac như hình dưới
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// 11 12 13 14 15
+function tamGiac(){
+	var n = 5; // số dòng muốn in ra
+	var soTuNhien = 1; // đếm các phần tử ở từng dòng
+	for (var i = 1; i <= n ; i++) {
+		for(var j = 1; j <= i ; j++){
+				document.write(soTuNhien + "\n");
+				soTuNhien++;
+		}
+		document.write("<br>");
+	}
+}
+tamGiac();
