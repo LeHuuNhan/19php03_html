@@ -1,0 +1,18 @@
+.container {
+	width: 200px;
+	margin: auto;
+}
+
+.tam-giac-deu {
+	margin: 0px;
+	padding: 0px;
+	width: 10px;
+	float: left;
+}
+
+.khoang-cach {
+	margin: 5px;
+	padding: 0px;
+	width: 10px;
+	float: left;
+}

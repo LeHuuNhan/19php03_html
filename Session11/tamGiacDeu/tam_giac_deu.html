@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tam giac deu</title>
+	<link rel="stylesheet" href="tam_giac_deu.css">
+</head>
+<body>
+
+	
+		<script type="text/javascript">
+			document.write("<div class='container'>");
+		var n = 4;
+		for(var i =0 ; i < n ; i++ ){
+			for(var j = 0 ; j < n*2 ; j++){
+				if (j >= (n-1-i) && j <= (n-1+i)) {
+					document.write("<div class='tam-giac-deu'>*</div>");
+ 				}else {
+					document.write("<div class='khoang-cach'></div>");
+				}	
+			}
+			document.write('<br>');
+		}
+		document.write("</div>");
+	</script>
+	
+	
+
+	
+
+</body>
+</html>

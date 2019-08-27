@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>in số</title>
+	<link rel="stylesheet" href="in.css">
+</head>
+<body>
+
+	<!-- Nhập vào 1 số có từ 1 đến 4 chữ số. In ra cách đọc số đó bằng tiếng Việt  -->
+	<script type="text/javascript">
+		
+		var a = prompt("nhập vào một số từ 1 đến 4 chữ số", "");
+		document.write(a);
+		document.write('<br>');
+
+		function kt(soNhap){
+			soNhap = parseInt(soNhap);
+			var kiemTra =0;
+
+			for(var i = 0; i < soNhap.lenghth ; i++){
+				kiemTra++;
+		}
+		if (soNhap.lenght > 4) {
+					document.write("vui lòng nhập đúng yêu cầu");
+				}else {
+					for(var j  = 0; j < soNhap.lenghth; j++){
+						if(j ==0){
+							switch(soNhap[j]){
+							case 0:
+								document.write("\n");
+							break;
+							case 1:
+								document.write("Một nghìn\n");
+							break;
+							case 2:
+								document.write("Hai nghìn\n");
+							break;
+							case 3:
+								document.write("Ba nghìn\n");
+							break;
+							case 4:
+								document.write("Bốn nghìn\n");
+							break;
+							case 5:
+								document.write("Năm nghìn\n");
+							break;
+							case 6:
+								document.write("Sáu nghìn\n");
+							break;
+							case 7:
+								document.write("Bảy nghìn\n");
+							break;
+							case 8:
+								document.write("Tám nghìn\n");
+							break;
+							case 9:
+								document.write("Chín nghìn\n");
+							break;
+						}
+						}
+						if(j ==1){
+							switch(soNhap[j]){
+							case 0:
+								document.write("không trăm\n");
+							break;
+							case 1:
+								document.write("Một trăm\n");
+							break;
+							case 2:
+								document.write("Hai trăm\n");
+							break;
+							case 3:
+								document.write("Ba trăm\n");
+							break;
+							case 4:
+								document.write("Bốn trăm\n");
+							break;
+							case 5:
+								document.write("Năm trăm\n");
+							break;
+							case 6:
+								document.write("Sáu trăm\n");
+							break;
+							case 7:
+								document.write("Bảy trăm\n");
+							break;
+							case 8:
+								document.write("Tám trăm\n");
+							break;
+							case 9:
+								document.write("Chín trăm\n");
+							break;
+						}
+						}
+						if(j ==2){
+							switch(soNhap[j]){
+							case 0:
+								document.write("lẻ\n");
+							break;
+							case 1:
+								document.write("mười\n");
+							break;
+							case 2:
+								document.write("Hai mươi\n");
+							break;
+							case 3:
+								document.write("Ba mươi\n");
+							break;
+							case 4:
+								document.write("Bốn mươi\n");
+							break;
+							case 5:
+								document.write("Năm mươi\n");
+							break;
+							case 6:
+								document.write("Sáu mươi\n");
+							break;
+							case 7:
+								document.write("Bảy mươi\n");
+							break;
+							case 8:
+								document.write("Tám mươi\n");
+							break;
+							case 9:
+								document.write("Chín mươi\n");
+							break;
+						}
+						}
+						if(j ==3){
+							switch(soNhap[j]){
+							case 0:
+								document.write("\n");
+							break;
+							case 1:
+								document.write("một\n");
+							break;
+							case 2:
+								document.write("Hai\n");
+							break;
+							case 3:
+								document.write("Ba\n");
+							break;
+							case 4:
+								document.write("Bốn\n");
+							break;
+							case 5:
+								document.write("lăm\n");
+							break;
+							case 6:
+								document.write("Sáu\n");
+							break;
+							case 7:
+								document.write("Bảy\n");
+							break;
+							case 8:
+								document.write("Tám \n");
+							break;
+							case 9:
+								document.write("Chín\n");
+							break;
+						}
+						}
+					}
+				}
+			}
+		document.write('<br>');
+		document.write('Số bạn vừa nhập được đọc là : \n');
+		document.write(kt(a));
+
+	</script>
+
+</body>
+</html>

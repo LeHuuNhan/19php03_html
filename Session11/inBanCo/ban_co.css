@@ -1,0 +1,23 @@
+.container {
+	width: 640px;
+	height: 640px;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+.box-black {
+	width: 80px;
+	height: 80px;
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.box-white {
+	width: 80px;
+	height: 80px;
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}

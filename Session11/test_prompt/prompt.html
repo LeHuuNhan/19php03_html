@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lệnh prompt</title>
+	<link rel="stylesheet" type="text/css" href="prompt.css">
+</head>
+<body>
+
+	<div class="prompt"></div>
+
+	<script type="text/javascript">
+		var a, b, c;
+		a = prompt("nhap vao so a :", "");
+		b = prompt("nhap vao so b :", "");
+		c = prompt("nhap vao so c :", "");
+
+		document.write(a);
+		document.write('<br>');
+		document.write(b);
+		document.write('<br>');
+		document.write(c);
+		document.write('<br>');
+
+		// gán số lớn nhất là số đầu tiên
+		// nếu nó nhỏ hơn số thứ 2 thì max = số thứ 2
+
+		function maxNumber(so1 , so2, so3){
+			so1 = parseInt(so1);
+			so2 = parseInt(so2);
+			so3 = parseInt(so3);
+
+			var max = so1;
+			if (max < so2) {
+				max = so2;
+			}
+			if (max < so3) {
+				max = so3;
+			}
+			return max;
+		}
+		document.write('<br>');
+		document.write('Số lớn nhát trong 3 số : '+a+','+b+','+c+'là :');
+		document.write(maxNumber(a,b,c));
+
+	</script>
+
+</body>
+</html>

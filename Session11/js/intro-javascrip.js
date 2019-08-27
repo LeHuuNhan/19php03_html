@@ -148,4 +148,6 @@ while (n < 10) {
 	document.write('<br');
 	n++ ;
 }  
+document.write('----------<br>');
+
 
