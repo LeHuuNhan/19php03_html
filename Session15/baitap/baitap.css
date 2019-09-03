@@ -1,0 +1,23 @@
+.hinh {
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	padding: 50px;
+	float: left;
+}
+
+img {
+	width: 200px;
+}
+.macDinh {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+}
+#name {
+	font-size: 100px;
+}
+.addBorder{
+	border:10px solid red;
+	box-shadow: 2px 2px 16px 0px black;
+}

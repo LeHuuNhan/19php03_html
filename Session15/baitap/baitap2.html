@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./baitap.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="hinh">
+        <img src="img/1.png" onclick="document.getElementById('macDinh').src = 'img/1.png'; 
+        document.getElementById('name').innerHTML = 'hinh 1';">
+    </div>
+    <div class="hinh">
+        <img src="img/2.png" onclick="document.getElementById('macDinh').src = 'img/2.png';
+        document.getElementById('name').innerHTML = 'hinh 2';">
+    </div>
+    <div class="hinh">
+        <img src="img/3.png" onclick="document.getElementById('macDinh').src = 'img/3.png';
+        document.getElementById('name').innerHTML = 'hinh 3';">
+    </div>
+    <div class="hinh">
+        <img src="img/4.png" onclick="document.getElementById('macDinh').src = 'img/4.png';
+        document.getElementById('name').innerHTML = 'hinh 4';">
+    </div>
+
+    <div class="macDinh">
+        <img src="img/5.png" id="macDinh">
+    </div>
+    <div id="name">No Name</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javscript" src="baitap.js"></script>
+    <script type="text/javascript">
+        $(document).ready(() => {
+            let item = document.getElementsByTagName('img');
+            for (let i = 0; i < item.length-1; i++) {
+                item[i].addEventListener('click',()=>{
+                    for(let i=0;i < item.length;i++ ){
+                        $(item[i]).removeClass('addBorder')
+                    }
+                    if( $(item[i]).hasClass('addBorder')  ){
+                        $(item[i]).removeClass('addBorder')
+                    }else{
+                        $(item[i]).addClass('addBorder')
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
