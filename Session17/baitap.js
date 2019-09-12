@@ -17,8 +17,7 @@ function tinhToan() {
 		if ((soDienDauKi <= soDienCuoiKi) && (ngayDauKi <= ngayCuoiKi)) {
 			soDien = soDienCuoiKi - soDienDauKi;
 				 document.write('<br> so dien su dung la : ' + soDien);
-			soNgay = ngayCuoiKi - ngayDauKi;
-				 document.write('<br> so ngay su dung la : ' + soNgay);
+				document.write('<br> từ ngày :' + ngayDauKi + 'đến ngày :' +ngayCuoiKi);
 			if (soDien <= 100) {
 				tienDien = soDien * 1500;
 			} else if (soDien <= 300) {
