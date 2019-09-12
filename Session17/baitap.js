@@ -31,7 +31,52 @@ function tinhToan() {
 		}
 
 
-	}else {
-		document.write('<br> vui long nhap du thong tin')
 	}
+	 if(ten == "") {
+		document.getElementById('errorTen').innerHTML = '<br> vui long nhap ten';
+	}
+	else {
+		document.getElementById('errorTen').innerHTML = '';
+	} 
+
+	if(soDienDauKi == "") {
+		document.getElementById('errorDienDauKi').innerHTML = '<br> vui long nhap so dien dau ki';
+	}
+	else {
+		document.getElementById('errorDienDauKi').innerHTML = '';
+	} 
+
+	if(soDienCuoiKi == "") {
+		document.getElementById('errorDienCuoiKi').innerHTML = '<br> vui long nhap so dien cuoi ki';
+	}
+	else {
+		document.getElementById('errorDienCuoiKi').innerHTML = '';
+	} 
+
+	if(soDienCuoiKi < soDienDauKi) {
+		document.getElementById('errorDien').innerHTML = '<br> vui long nhap so dien dau ki nho hon so dien cuoi ki';
+	}
+	else {
+		document.getElementById('errorDienDauKi').innerHTML = '';
+	}
+
+	if(ngayDauKi == "") {
+		document.getElementById('errorNgayDauKi').innerHTML = '<br> vui long nhap ngay dau ki';
+	}
+	else {
+		document.getElementById('errorNgayDauKi').innerHTML = '';
+	} 
+
+	if(ngayCuoiKi == "") {
+		document.getElementById('errorNgayCuoiKi').innerHTML = '<br> vui long nhap ngay cuoi ki';
+	}
+	else {
+		document.getElementById('errorNgayCuoiKi').innerHTML = '';
+	} 
+	
+	if(ngayCuoiKi < ngayDauKi) {
+		document.getElementById('errorNgayDauKi').innerHTML = '<br> vui long nhap ngay dau ki nho hon ngay cuoi ki';
+	}else {
+		document.getElementById('errorNgayDauKi').innerHTML = '';
+	} 
 }
