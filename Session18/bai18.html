@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form dang ky</title>
+	<link rel="stylesheet" href="bai18.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 class="title"> FORM DANG KY</h1>
+	<div class="container">
+
+		<form action="bai18.js" method="POST">
+			<p>
+				<p id="errorTen"></p>
+				<label>Ho va Ten: </label>
+				<input type="text" name="ten" id="ten">
+			</p>
+
+			<p>
+				<p id="errorGioiTinh"></p>
+				<label>Gioi Tinh: </label>
+				<label class="nam">Nam </label>
+				<input type="radio" name="gioitinh" value="Nam"><br>
+				<label class="nu">Nu </label>
+				<input type="radio" name="gioitinh" value="Nu">
+			</p>
+
+			<p>
+				<p id="errorNgaySinh"></p>
+				<label>Ngay Sinh: </label>
+				<input type="date" name="ngaySinh" id="ngaySinh">
+			</p>
+
+			<p>
+				<p id="errrorTinhThanh"></p>
+				<label>Tinh Thanh: </label>
+				<select id="tinhThanh">
+					<option value="none">None</option>
+					<option value="quangNgai">Quang Ngai</option>
+					<option value="quangNam">Quang Nam</option>
+					<option value="daNang">Da Nang</option>
+					<option value="hue">Hue</option>
+				</select>
+			</p>
+
+			<p>
+				<input type="button" name="dangky" id="dangky" value="Dang Ky" onclick="dangKy()">
+			</p>
+		</form>
+	</div>
+	
+	<script src="bai18.js"></script>
+
+</body>
+</html>

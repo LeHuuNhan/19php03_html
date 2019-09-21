@@ -1,0 +1,26 @@
+h1 {
+	color: blue;
+	text-align: center;
+}
+
+.container {
+	border: 2px solid black;
+	width: 500px;
+	margin: auto; 
+	padding: 50px;
+}
+label {
+	width: 100px;
+	float: left;
+}
+
+.nam, .nu {
+	width: 50px;
+}
+.nu {
+	margin-left: 100px;
+}
+
+#errorTen, #errorNgaySinh, #errorGioiTinh {
+	color: red;
+}
