@@ -58,8 +58,8 @@ function ktTinhThanh(tinhThanh) {
 
 function dangKy() {
 	
-	ktGioiTinh(gioiTinhs);
-	ktTinhThanh(tinhThanh);	
+	// ktGioiTinh(gioiTinhs);
+	// ktTinhThanh(tinhThanh);	
 
 	if (ten != '' && gioiTinh != '' && ngaySinh != '' && optTinhThanh != '') {
 		document.write('Ten :'+ten);
