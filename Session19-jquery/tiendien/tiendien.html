@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tính tiền điện</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="tiendien.css">
+</head>
+<body>
+	<h1>Tính tiền điện</h1>
+	<div class="container">
+		<form>
+			
+			<p>
+				<label>Tên :</label>
+				<input type="text" name="ten" id="ten">
+				<p id="errorTen"></p>
+			</p>
+			
+			<p>
+				<label>Số điện đầu kì :</label>
+				<input type="number" name="soDienDauKi" id="soDienDauKi">
+				<p id="errorSoDienDauKi"></p>
+			</p>
+
+			<p>
+				<label>Số điện cuối kì :</label>
+				<input type="number" name="soDienCuoiKi" id="soDienCuoiKi">
+				<p id="errorSoDienCuoiKi"></p>
+			</p>
+
+			<p>
+				<label>Ngày đầu kì :</label>
+				<input type="Date" name="ngayDauKi" id="ngayDauKi">
+				<p id="errorNgayDauKi"></p>
+			</p>
+
+			<p>
+				<label>Ngày cuối kì :</label>
+				<input type="Date" name="ngayCuoiKi" id="ngayCuoiKi">
+				<p id="errorNgayCuoiKi"></p>
+			</p>
+
+			<p>
+				<input type="button" name="xuat" id="xuat" value="Xuất">
+			</p>
+
+		</form>
+
+		<div class="ketqua">
+			<p>
+				<label>Tên: </label>
+				<p id="kqTen"></p>
+			</p>
+			<p>
+				<label>Số điện đã dùng: </label>
+				<p id="kqDien"></p>
+			</p>
+			<p>
+				<label>Thành tiền: </label>
+				<p id="kqTienDien"></p>
+			</p>
+			<p>
+				<label>Ngày đầu kì: </label>
+				<p id="kqNgayDauKi"></p>
+			</p>
+			<p>
+				<label>Ngày cuối kì: </label>
+				<p id="kqNgayCuoiKi"></p>
+			</p>
+		</div>
+
+	</div>
+
+	<script src="../jquery/jquery-3.4.1.min.js."></script>
+	<script src="tiendien.js"></script>
+
+</body>
+</html>
