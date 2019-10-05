@@ -1,3 +1,9 @@
 #errorTen, #errorDienDauKi, #errorDienCuoiKi, #errorNgayDauKi, #errorNgayCuoiKi, #errorDien {
 	color: red;
 }
+.container {
+	border: 2px solid black;
+	width: 500px;
+	margin: auto;
+	padding: 50px;
+}

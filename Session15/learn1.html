@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn 1</title>
+	<link rel="stylesheet" type="text/css" href="learn1.css">
+</head>
+<body>
+
+	<form>
+		<p id="success"></p>
+		<p>Username :
+			<input type="text" name="username" id="username">
+		</p>
+		<p id="errorUsername" class="error"></p>
+		<p>Password :
+			<input type="password" name="password" id="password">
+		</p>
+		<p id="errorPassword" class="error"></p>
+		<p> 
+			<input type="button" onclick="validateRegister()" name="register" value="Register">
+		</p>
+	</form>
+
+	<form>
+		
+		<p>Nhap so A :
+			<input type="text" name="soA" id="soA">
+		</p>
+		<p id="errorSoA" class="error"></p>
+		<p>Nhap so B :
+			<input type="text" name="soB" id="soB">
+		</p>
+		<p id="errorSoB" class="error"></p>
+		<p> 
+			<input type="button" onclick="sum()" name="tinhTong" value="Sum"> 
+			<!-- ngoài onclick thì còn có onkeyup để thực thi tức thời và onmouseover -->
+		</p>
+		<p id="sum"></p>
+	</form>
+
+	<script src="learn1.js"></script>
+
+</body>
+</html>

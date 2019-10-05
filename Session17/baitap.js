@@ -16,14 +16,18 @@ function tinhToan() {
 		
 		if ((soDienDauKi <= soDienCuoiKi) && (ngayDauKi <= ngayCuoiKi)) {
 			soDien = soDienCuoiKi - soDienDauKi;
+			var tam = soDien - 100;
+			var tienTam = soDien - 300;
 				 document.write('<br> so dien su dung la : ' + soDien);
 				document.write('<br> từ ngày :' + ngayDauKi + 'đến ngày :' +ngayCuoiKi);
 			if (soDien <= 100) {
 				tienDien = soDien * 1500;
 			} else if (soDien <= 300) {
-				tienDien = soDien * 2000;
+				
+				tienDien =(1500 *100) + tam * 2000;
 			} else {
-				tienDien = soDien * 3000;
+				
+				tienDien =(1500*100) + (2000*200) + soDien * 3000;
 			}
 			document.write('<br> tien dien la :' + tienDien);
 		} else {
@@ -58,7 +62,7 @@ function tinhToan() {
 			document.getElementById('errorDien').innerHTML = '<br> vui long nhap so dien dau ki nho hon so dien cuoi ki';
 		}
 		else {
-			document.getElementById('errorDienDauKi').innerHTML = '';
+			document.getElementById('errorDien').innerHTML = '';
 		}
 
 		if(ngayDauKi == "") {

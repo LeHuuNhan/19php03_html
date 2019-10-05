@@ -1,0 +1,25 @@
+.container {
+	margin: auto;
+	width: 800px;
+}
+.hinh {
+	margin: auto;
+	
+}
+.hinh img {
+	width: 200px;
+	margin: 20px;
+	float: left;
+}
+
+#name {
+	float: left;
+	margin: auto;
+	padding: 50px;
+	font-size: 50px;
+}
+
+.hinh1 img {
+	width: 400px;
+	margin: 20px;
+}

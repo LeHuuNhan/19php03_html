@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header, section, footer {
+	position: relative;
+	width: 1200px;
+	margin: auto;
+}
+.header-top {
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 2px solid gray;
+}
+.top-left p{
+	width: 50%;
+	margin-left: 10px;
+}
+.top-right {
+	float: right;
+	margin-top: 0;
+}
+
+.menu {
+	height: 80px;
+	line-height: 80px;
+	padding: 20px;
+	border-bottom: 1px solid grey;
+}
+.menu img {
+	width: 200px;
+	height: 80px;
+	float: left;
+	margin: 5px;
+}
+
+.thanh-menu {
+	display: inline;
+}
+.thanh-menu a {
+	text-decoration: none;
+	width: 120px;
+	float: left;
+	color: grey;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 80px;
+}
+.menu a:hover {
+	color: blue;
+}
+.menu a:hover, a:focus {
+	font-size: 110%;
+}
+
+.gioithieu {
+	width: 1200px;
+	height: 600px;
+	margin: auto;
+	background-color: #E2E9E9;
+}
+.text-gioithieu {
+	width: 500px;
+	float: left;
+	margin: 150px 0px 0 80px;
+}
+.text-gioithieu h3 {
+	color: green;
+}
+.text-gioithieu p {
+	margin: 5px 0 5px 0;
+}
+
+.text-gioithieu hr {
+	width: 40px;
+	margin: 10px 0 10px 0;
+}
+
+.slide {
+	width: 600px;
+	float: right;
+}
+
+.noidungsanpham {
+	width: 900px;
+	height: 300px;
+	margin: auto;
+}
+
+.thongtin, .tieuchuan, .huongdan {
+	width: 250px;
+	float: left;
+}
+.thongtin h4, .tieuchuan h4, .huongdan h4 {
+	font-family: arial;
+	padding: 30px 0 10px 0px;
+	border-bottom: 1px solid grey;
+}
+.thongtin p, .tieuchuan p, .huongdan p {
+	padding: 10px 0 10px 0;
+	color: grey;
+}
+.tieuchuan {
+	margin: 0 0px 0 80px;
+}
+
+.sanphamkhac {
+	width: 900px;
+	height: 750px;
+	padding: 10px;
+	margin: auto;
+	border-bottom: 1px solid grey;
+}
+.sanphamkhac h1 {
+	font-family: arial;
+	text-align: center;
+	margin: 30px 0 20px 0;
+	padding: 30px 0 30px 0;
+}
+.sanpham1 {
+	float: left;
+	margin: 30px 25px 30px 0;
+}
+
+footer {
+	width: 900px;
+	height: 300px;
+	margin: auto;
+	padding: 20px;
+}
+.footer-top {
+	height: 50px;
+	border-bottom: 1px solid grey;
+}
+.footer-copy {
+	line-height: 50px;
+	float: left;
+}
+.footer-icon img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px 0 0;
+	line-height: 50px;
+	border-radius: 50%;
+	float: right;
+	cursor: pointer;
+}
+
+.footer-left, .footer-center, .footer-right {
+	width: 250px;
+	height: 200px;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+}
+.footer-left {
+	float: left;
+	margin-left: 0px;
+}
+.footer-left p, .footer-center p, .footer-right p {
+	margin: 10px 0 0 0;
+}
+.footer-left h4, .footer-center h4, .footer-right h4 {
+	margin: 10px 0 10px 0;
+	font-family: arial;
+}
+.footer-left hr, .footer-center hr, .footer-right hr {
+	margin-left: 0;
+}
+
+.footer-center {
+	float: left;
+	margin-left: 80px;
+}
+.footer-right {
+	float: right;
+}
+

@@ -1,0 +1,347 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header, section, footer {
+	position: relative;
+	width: 1200px;
+	margin: auto;
+}
+.header-top {
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 2px solid gray;
+}
+.top-left p{
+	width: 50%;
+	margin-left: 10px;
+}
+.top-right {
+	float: right;
+	margin-top: 0;
+}
+
+.menu {
+	height: 80px;
+	line-height: 80px;
+	padding: 20px;
+	border-bottom: 1px solid grey;
+}
+.menu img {
+	width: 200px;
+	height: 80px;
+	float: left;
+	margin: 5px;
+}
+
+.thanh-menu {
+	display: inline;
+}
+.thanh-menu a {
+	text-decoration: none;
+	width: 120px;
+	float: left;
+	color: grey;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 80px;
+}
+.menu a:hover {
+	color: blue;
+}
+.menu a:hover, a:focus {
+	font-size: 110%;
+}
+
+section {
+	
+}
+
+.slide {
+	text-align: center;
+}
+.sanpham, .menu-sanpham {
+	text-align: center;
+	margin: 40px;
+}
+
+.menu-sanpham1 {
+	display: inline;
+}
+
+.menu-sanpham ul {
+	margin: auto;
+	width: 1200px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.menu-sanpham1 a {
+	width: 150px;
+	margin: 5px;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	color: grey;
+	font-weight: bold;
+	width: 100px;
+}
+.menu-sanpham a:hover {
+	color: blue;
+}
+.menu-sanpham a:hover, a:focus {
+	font-size: 110%;
+}
+
+.noidung h3 {
+	color: green;
+	text-align: center;
+}
+
+hr {
+	width: 100px;
+	margin: auto;
+	color: grey;
+}
+
+.noidungchinh {
+	position: initial;
+	width: 1200px;
+	height: 550px;
+	margin: auto;
+	background-color: silver;
+}
+.noidung {
+	width: 250px;
+	height: 400px;
+	margin: 20px 0px 0 110px ;
+	float: left;
+	background-color: white;
+	font-size: 14px;
+}
+.noidung h3 {
+	margin: 5px 0 10px 0;
+}
+.noidung p {
+	margin: 5px;
+}
+.noidung img {
+	margin-left: 25px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.xemthem {
+	width: 100px;
+	margin: 10px auto;
+	padding: 5px;
+	text-align: center;
+	border:1px solid gray;
+	border-radius: 20px;
+	background-color: white;
+}
+.xemthem a {
+	text-decoration: none;
+	color: green;
+}
+.xemthem a:hover {
+	color: red;
+}
+.xemthem a:hover, a:focus {
+	font-size: 110%;
+}
+.chuyen {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	margin: 450px 600px 100px 500px; 
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 95%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	transition: 0.6s ease;
+	color: green;
+	background-color: silver;
+	border-radius: 50%;
+	border:1.5px solid gray;
+}
+.next {
+	margin-left: 50px;
+}
+.prev:hover, .next:hover {
+	border: 1.5px solid lime;
+}
+
+.gioithieu {
+	margin-top: 100px;
+}
+.gioithieu h1 {
+	text-align: center;
+}
+.gioithieu h3 {
+	color: green;
+}
+
+.content-gioithieu {
+	width: 1000px;
+	height: 500px;
+	margin: auto;
+}
+.quytrinh {
+	width: 400px;
+	height: 100px;
+	padding: 50px;
+	float: left;
+}
+
+.cach {
+	width: 0px;
+	height: 50px;
+	margin: auto;
+	border: 2px solid green;
+}
+
+.content-tintuc {
+	margin: auto;
+}
+.tintuc h1 {
+	text-align: center;
+}
+.tintuc {
+	width: 1200px;
+	height: 500px;
+	margin-top: 50px;
+	border: 1px solid black;
+}
+
+.tintuc1, .tintuc2, .tintuc3 {
+	width: 350px;
+	height: 250px;
+	float: left;
+	margin:auto;
+	padding: 25px;
+}
+
+.lienlac {
+	height: 500px;
+	background-color: #DDF0EF;
+	box-shadow: 2px 4px 6px grey;
+}
+.lienlac h1 {
+	text-align: center;
+	margin: 40px;
+	padding: 50px;
+}
+.lienlac form {
+	width: 650px;
+	height: 300px;
+	margin: auto;
+}
+#hoTen, #soDienThoai {
+	width: 300px;
+	height: 30px;
+	float: left;
+	padding-left: 10px;
+}
+#soDienThoai {
+	float: right;
+	padding-left: 10px;
+}
+#email {
+	width: 646px;
+	height: 30px;
+	margin: 20px 0 20px 0;
+	padding-left: 10px;
+}
+#noiDung {
+	width: 646px;
+	height: 50px;
+	margin: 0 0 20px 0;
+	padding-left: 10px;
+}
+#capcha {
+	width: 300px;
+	height: 30px;
+	margin: 0 0 20px 0;
+	padding-left: 10px;
+}
+form label {
+	width: 100px; 
+	height: 30px;
+	background-color: green;
+	margin: 20px; 
+	padding: 8px;
+	color: white;
+}
+
+footer {
+	width: 900px;
+	margin: auto;
+	padding: 20px;
+}
+.footer-top {
+	height: 50px;
+	border-bottom: 1px solid grey;
+}
+.footer-copy {
+	line-height: 50px;
+	float: left;
+}
+.footer-icon img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px 0 0;
+	line-height: 50px;
+	border-radius: 50%;
+	float: right;
+	cursor: pointer;
+}
+
+.footer-left, .footer-center, .footer-right {
+	width: 250px;
+	height: 100px;
+	margin-right: 0;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+}
+.footer-left {
+	float: left;
+	margin-bottom: 30px;
+}
+.footer-left p {
+	margin: 10px 0 0 0;
+}
+.footer-left h4 {
+	margin: 10px 0 10px 0;
+}
+.footer-left hr, .footer-center hr, .footer-right hr {
+	margin-left: 0;
+}
+
+.footer-center {
+	float: left;
+	margin-left: 80px;
+}
+.footer-right {
+	float: right;
+}
+.footer-center p {
+	margin: 10px 0 0 0;
+}
+.footer-center h4 {
+	margin: 10px 0 10px 0;
+}
+.footer-right p {
+	margin: 10px 0 0 0;
+}
+.footer-right h4 {
+	margin: 10px 0 10px 0;
+}

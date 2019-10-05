@@ -100,15 +100,15 @@ document.write(bt4('au', 'van hau van hau van hau van hau'));
 
 function bt5( charSeach , myStr) {
 	var dem = 0;
-	var moi = '';
+	var moi ;
 	
-	while (myStr.indexOf(charSeach) != -1) {
-		dem++;
-		moi = myStr.substring(myStr.indexOf(charSeach)+1, myStr.length);
-		myStr = moi;
+	for(var i =0; i <= myStr.length ; i++) {
+		if (myStr[i] == charSeach) {
+			moi = myStr.replace(charSeach, myStr);
+		}
 	}
-	return document.write("<span>"+ charSeach +"</span>");
-				
+	document.write(moi);
+
 }
 document.write('<br> ');
 document.write('chuỗi kí tự cần tìm xuất hiện :');
@@ -139,3 +139,5 @@ demChuoi();
 
 // BT 7: cung nhu bt6 nhung phan biet chu Hoa va chu thuong
 // nghien cuu toUpperCase() vs toLowerCase()
+// replace() de thay the mot thu gi do
+// dung ham eval() de tinh toan tao may tinh.
