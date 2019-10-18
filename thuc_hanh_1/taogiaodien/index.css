@@ -1,0 +1,194 @@
+body {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+	"Helvetica Neue",Arial,"Noto Sans","sans-serif","Apple Color Emoji",
+	"Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	width: auto;
+	height: 60px;
+	box-shadow: 0px 4px 0px rgba(0,0,0,.05);
+}
+
+.header-left {
+	width: 200px;
+	height: 30px;
+	float: left;
+	margin-left: 20px;
+	line-height: 60px;
+}
+
+.header-left p {
+	font-size: 20px;
+}
+
+.header-right {
+	position: initial;
+	height: 30px;
+}
+
+.header-right ul {
+	position: relative;
+	width: 300px;
+	list-style-type: none;
+	line-height: 60px;
+	float: left;
+	margin-left: 900px;
+}
+.header-right ul li {
+	display: inline;
+	margin: 0px 10px 0px 0px;
+}
+
+.header-right ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.header-right ul li a:hover {
+	text-decoration: underline;
+}
+
+.signup {
+	position: relative;
+	width: 110px;
+	height: 50px;
+	border: 1px solid #007bff;
+	color: #007bff;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+	border-radius: 5px;
+}
+
+.signup:hover {
+	color: white;
+	background-color: #007bff;
+}
+
+section {
+	width: 800px;
+	height: 580px;
+	text-align: center;
+	margin: auto;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.section-top h1 {
+	font-weight: normal;
+	font-size: 55px;
+	margin: 50px 0 20px 0px;
+}
+
+.section-top p {
+	width: 600px;
+	margin: auto;
+	color: #A09B98;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.section-content {
+	position: initial;
+	height: 300px;
+	margin: auto;
+}
+.top {
+	font-size: 20px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	background-color: rgba(0,0,0,.03);
+	border-radius-top: 10px; 
+}
+.free, .pro, .enterprise {
+	width: 240px;
+	height: 300px;
+	border: 1px solid rgba(0,0,0,.125);
+	float: left;
+	margin: 30px 10px 20px 10px;
+	border-radius: 5px;
+}
+
+.content span {
+	font-size: 40px;
+	color: #BCB9B7;
+}
+ .content span b {
+ 	color: black;
+}
+
+.sign_up_for_free {
+	color: #007bff;
+	background-color: white;
+	border: 1px solid #007bff;
+}
+
+.sign_up_for_free:hover {
+	color: #F7F5F3;
+	background-color: #007bff;
+}
+
+.get_started, .contact_us {
+	background-color: #007bff;
+	color: #F7F5F3;
+	border: 0px;
+}
+
+.content button {
+	width: 220px;
+	height: 50px;
+	line-height: 15px;
+	padding: 10px;
+	border-radius: 8px;
+	font-size: 20px;
+	margin: 30px 0 20px 0;
+}
+
+footer {
+	width: auto;
+	margin: auto;
+}
+
+.content-footer {
+	width: 800px;
+	margin: auto;
+}
+
+.footer-right, .footer-left {
+	width: 200px;
+	height: 200px;
+	float: left;
+	font-family: Arial;
+	margin: 50px 0 20px 0;
+}
+
+.footer-right ul, .footer-left ul {
+	list-style-type: none;
+}
+
+.footer-right h5, .footer-left h5 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-left p {
+	font-size: 12px;
+	color: #b0c2c4;
+}
+
+.footer-right ul li a {
+	text-decoration: none;
+	color: #938989;
+	padding-top: 10px;
+}
+
+.footer-right ul li a:hover {
+	text-decoration: underline;
+}
