@@ -1,114 +1,74 @@
-$('.button-rad').click(function() {
-	$('#result').html('Rad');
-});
+// đổi dấu
+var doi_dau = false;
+// số phép tính ưu tiên tìm thấy
+var uu_tien =0;
 
-$('.button-inv').click(function() {
-	$('#result').html('Inv');
-});
+// vừa bấm phép tính
+var doi_phep_tinh = false;
 
-$('.button-pi').click(function() {
-	$('#result').html('&#960');
-});
+// mảng ghi nhớ các số hạn
+var mang_so_index = 0;
+var mang_so = new Array();
 
-$('.button-e').click(function() {
-	$('#result').html('e');
-});
+// mảng ghi nhớ phép tính
+var mang_pt_index = 0;
+var mang_pt = new Array();
 
-$('.button-ans').click(function() {
-	$('#result').html('Ans');
-});
-$('.button-deg').click(function() {
-	$('#result').html('Deg');
-});
-$('.button-sin').click(function() {
-	$('#result').html('Sin');
-});
-$('.button-cos').click(function() {
-	$('#result').html('Cos');
-});
-$('.button-tan').click(function() {
-	$('#result').html('tan');
-});
-$('.button-exp').click(function() {
-	$('#result').html('exp');
-});
+// phepo tinh
+var pheptinh = "+";
 
-$('.button-x').click(function() {
-	$('#result').html('x!');
-});
-$('.button-ln').click(function() {
-	$('#result').html('ln');
-});
-$('.button-log').click(function() {
-	$('#result').html('log');
-});
-$('.button-can').click(function() {
-	$('#result').html('&#8730');
-});
-$('.button-mu').click(function() {
-	$('#result').html('^');
-});
+function clickButton(ojb){
+	//chuỗi hiện tại của kết quả 
+	var ketqua = document.getElementById('result');
+	var ketquastr = ketqua.innerHTML;
+	
+	if (ketquastr === "0") {
+		ketquastr = "";
+	}
+	// html của phím được bấm
+	var type = ojb.innerHTML;
+	var dautinh = ['+', '-', 'x', ':'];
 
-$('.button-ngoac-trai').click(function() {
-	$('#result').html('(');
-});
-$('.button-7').click(function() {
-	$('#result').html('7');
-});
-$('.button-4').click(function() {
-	$('#result').html('4');
-});
-$('.button-1').click(function() {
-	$('#result').html('1');
-});
-$('.button-0').click(function() {
-	$('#result').html('0');
-});
+	if( type== '+' ||
+		type== '-' ||
+		type== 'x' ||
+		type== ':' ) {
 
-$('.button-ngoac-phai').click(function() {
-	$('#result').html(')');
-});
-$('.button-8').click(function() {
-	$('#result').html('8');
-});
-$('.button-5').click(function() {
-	$('#result').html('5');
-});
-$('.button-2').click(function() {
-	$('#result').html('2');
-});
-$('.button-cham').click(function() {
-	$('#result').html('.');
-});
+		pheptinh = type;
+		if (!dautinh.includes(ketquastr[ketquastr.length - 1])) {
+			ketquastr += type;
+		} else {
+			ketquastr = ketquastr.substring(0, ketquastr.length - 1);
+			ketquastr += type;
+		}
 
-$('.button-phan-tram').click(function() {
-	$('#result').html('%');
-});
-$('.button-9').click(function() {
-	$('#result').html('9');
-});
-$('.button-6').click(function() {
-	$('#result').html('6');
-});
-$('.button-3').click(function() {
-	$('#result').html('3');
-});
-$('.button-bang').click(function() { // xuat ket qua tai day
-	$('#result').html('=');
-});
+	} else if (type === '=') {
+		var sodau = 0;
+		var soduoi = 0;
 
-$('.button-ce').click(function() {  // reset lai bang
-	$('#result').html('CE');
-});
-$('.button-chia').click(function() {
-	$('#result').html('/');
-});
-$('.button-nhan').click(function() {
-	$('#result').html('*');
-});
-$('.button-tru').click(function() {
-	$('#result').html('-');
-});
-$('.button-cong').click(function() {
-	$('#result').html('+');
-});
+		var temp = ketquastr.replace(/[+x:-]/g, " "); 
+		temp = temp.split(" ");
+		sodau = temp[0];
+		soduoi = temp[1];
+
+		ketquastr = caculator(+sodau, +soduoi, pheptinh);
+	} else {
+		ketquastr += type;
+	}
+
+	ketqua.innerHTML = ketquastr;
+}
+
+function caculator(sodau, soduoi, dau) {
+	var ketqua = document.getElementById('result');
+	switch(dau) {
+		case 'x':
+			return sodau * soduoi;
+		case ':':
+			return sodau / soduoi;
+		case '+':
+			return sodau + soduoi;
+		case '-':
+			return sodau - soduoi;
+	}
+}
