@@ -6,14 +6,6 @@ var uu_tien =0;
 // vừa bấm phép tính
 var doi_phep_tinh = false;
 
-// mảng ghi nhớ các số hạn
-var mang_so_index = 0;
-var mang_so = new Array();
-
-// mảng ghi nhớ phép tính
-var mang_pt_index = 0;
-var mang_pt = new Array();
-
 // phepo tinh
 var pheptinh = "+";
 
